@@ -1,0 +1,65 @@
+.col-md-12{
+  height: 200px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes bounce {
+  0%   {left:0%; top:0px;}
+  12%  {left:12%; top:150px}
+  25%  {left:25%; top:0px;}
+  37%  {left:37%; top:150px;}
+  50%  {left:50%; top:0px;}
+  62%  {left:62%; top:150px;}
+  75%  {left:75%; top:0px;}
+  87%  {left:87%; top:150px;}
+  100% {left:100%; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes bounce {
+  0%   {left:0%; top:0px;}
+  12%  {left:12%; top:150px}
+  25%  {left:25%; top:0px;}
+  37%  {left:37%; top:150px;}
+  50%  {left:50%; top:0px;}
+  62%  {left:62%; top:150px;}
+  75%  {left:75%; top:0px;}
+  87%  {left:87%; top:150px;}
+  100% {left:100%; top:0px;}
+}
+
+.bounce{
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.ball1, .ball2{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0 0 20px;
+}
+
+.ball1{
+  background-color: red;
+}
+
+.ball2{
+  background-color: #333;
+}
+
+span{
+  display: none;
+  font-size: 9px;
+  color: red;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bouncer</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bouncer.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bouncer</h1>
+      <h3>Click "Start" to start bouncing a ball</h3>
+      <div class="row">
+        <!--ONE -->
+        <div>
+          <button class="btn btn-primary" id="one">START 1</button> <span id="span1">double-click to stop</span>
+          <div class="col-md-12">
+            <div class="ball1">1</div>
+          </div>
+        </div>
+
+        <!--TWO -->
+        <div>
+          <button class="btn btn-primary" id="two">START 2</button> <span id="span2">double-click to stop</span>
+          <div class="col-md-12">
+            <div class="ball2">2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script type="text/javascript">
+      /*function start(id, number){
+        $('.ball'.number).addClass('bounce');
+        $('#'.id).text('STOP '.number);
+        $('#span'.number).fadeIn('slow');
+      }
+
+      function stop(id, number){
+        $('.ball'.number).removeClass('bounce');
+        $('#span'.number).fadeOut();
+        $('#'.id).text('START '.number);
+      }*/
+      //ONE
+      $('#one').click(function(){
+        $('.ball1').addClass('bounce');
+        $('#one').text('STOP 1');
+        $('#span1').fadeIn('slow');
+      });
+
+      $('#one').dblclick(function(){
+        $('.ball1').removeClass('bounce');
+        $('#span1').fadeOut();
+        $('#one').text('START 1');
+      });
+
+      //TWO
+      $('#two').click(function(){
+        $('.ball2').addClass('bounce');
+        $('#two').text('STOP 2');
+        $('#span2').fadeIn('slow');
+      });
+
+      $('#two').dblclick(function(){
+        $('.ball2').removeClass('bounce');
+        $('#span2').fadeOut();
+        $('#two').text('START 2');
+      });
+    </script>
+  </body>
+</html>
